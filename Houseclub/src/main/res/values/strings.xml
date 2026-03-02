@@ -7,6 +7,7 @@
 	<string name="resend_code_message">Did not receive it?</string>
 	<string name="resend_code_button">Tap to resend</string>
 	<string name="next">Next</string>
+	<string name="invalid_phone_number">Please enter a valid phone number</string>
 	<string name="warning">Warning!</string>
 	<string name="warning_text">This is an <b>unofficial</b> app. Using this might get your Clubhouse account permanently banned. Proceed at your own risk.</string>
 	<string name="i_understand">I understand</string>
