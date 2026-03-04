@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viva Events | Event Organizing Company</title>
+  <meta name="description" content="Viva Events is an event organizing company for weddings, corporate conferences, and private celebrations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="brand">Viva Events</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn btn-small">Get a Quote</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <p class="eyebrow">Premium Event Planning</p>
+      <h1>We Create Unforgettable Events That Feel Effortless.</h1>
+      <p class="subtitle">
+        From intimate celebrations to large corporate productions, Viva Events handles every
+        detail so you can enjoy your moment.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Book a Free Consultation</a>
+        <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+      </div>
+      <div class="stats">
+        <article><span>250+</span><p>Events Delivered</p></article>
+        <article><span>95%</span><p>Client Referrals</p></article>
+        <article><span>12</span><p>Years Experience</p></article>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="section container">
+      <h2>What We Organize</h2>
+      <p class="section-lead">Tailored planning, design, and coordination for events of every size.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Weddings</h3>
+          <p>Concept design, vendor management, timeline creation, and complete day-of coordination.</p>
+        </article>
+        <article class="card">
+          <h3>Corporate Events</h3>
+          <p>Conferences, product launches, networking nights, and branded experiences with measurable impact.</p>
+        </article>
+        <article class="card">
+          <h3>Private Celebrations</h3>
+          <p>Birthdays, anniversaries, and milestone moments curated with style and personality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <h2>Featured Experiences</h2>
+        <div class="portfolio-grid">
+          <article>
+            <h3>Skyline Product Launch</h3>
+            <p>650 guests · immersive LED showcase · live media coverage</p>
+          </article>
+          <article>
+            <h3>Garden Wedding Weekend</h3>
+            <p>3-day celebration · custom floral architecture · luxury guest logistics</p>
+          </article>
+          <article>
+            <h3>Founders' Gala Night</h3>
+            <p>Black-tie fundraiser · high-touch hospitality · auction production</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section container">
+      <h2>Client Love</h2>
+      <div class="testimonials">
+        <blockquote>
+          “Viva Events transformed our conference into a high-energy brand experience. Every detail was flawless.”
+          <cite>— Neha Kapoor, Marketing Director</cite>
+        </blockquote>
+        <blockquote>
+          “We actually enjoyed our wedding day because their team handled everything with grace and precision.”
+          <cite>— Arjun & Meera</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-wrap">
+        <div>
+          <h2>Let’s Plan Your Event</h2>
+          <p>Share your event vision and we’ll send a tailored plan within 24 hours.</p>
+          <ul class="contact-list">
+            <li>📍 Mumbai, India</li>
+            <li>📞 +91 98765 43210</li>
+            <li>✉️ hello@vivaevents.com</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your Name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Event Type
+            <select name="eventType" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Wedding</option>
+              <option>Corporate Event</option>
+              <option>Private Party</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Event Date
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us more about your event..." required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Viva Events. All rights reserved.</p>
+      <a href="#" aria-label="Back to top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
