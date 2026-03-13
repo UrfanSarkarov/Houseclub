@@ -188,7 +188,8 @@ h1 {
 
 .card,
 .portfolio-grid article,
-.testimonials blockquote {
+.testimonials blockquote,
+.price-tool {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -213,6 +214,26 @@ cite {
   color: #c6cbef;
   font-style: normal;
   font-weight: 600;
+}
+
+.price-tool label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.price-tool textarea {
+  margin-bottom: 0.8rem;
+}
+
+.price-results {
+  margin-top: 1rem;
+  color: var(--text-muted);
+}
+
+.price-results ul {
+  margin-top: 0.4rem;
+  padding-left: 1.1rem;
 }
 
 .contact-wrap {
@@ -261,47 +282,51 @@ textarea {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
 }
 
 .footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.7rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.footer-wrap a {
+.site-footer a {
   color: var(--text-muted);
+  text-decoration: none;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
+  .cards,
+  .portfolio-grid,
+  .testimonials,
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
   .menu-toggle {
-    display: block;
+    display: inline-flex;
   }
 
   .nav-links {
     position: absolute;
+    top: 64px;
     right: 4vw;
-    top: 72px;
+    left: 4vw;
+    flex-direction: column;
+    align-items: flex-start;
     background: #111633;
     border: 1px solid var(--line);
     border-radius: 12px;
-    padding: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 0.8rem;
     display: none;
   }
 
   .nav-links.open {
     display: flex;
-  }
-
-  .cards,
-  .portfolio-grid,
-  .testimonials,
-  .contact-wrap,
-  .stats {
-    grid-template-columns: 1fr;
   }
 }

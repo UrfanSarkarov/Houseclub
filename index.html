@@ -43,6 +43,17 @@
   </header>
 
   <main>
+    <section id="price-tool" class="section container">
+      <h2>Price Uplift Analyzer (+50%)</h2>
+      <p class="section-lead">Paste text from a file, menu, or ad. We'll find price-like values and increase each one by 50%.</p>
+      <div class="price-tool">
+        <label for="sourceText">Source text</label>
+        <textarea id="sourceText" rows="5" placeholder="Example: Starter - 20 AZN, Premium - $40, VIP - 100₼"></textarea>
+        <button id="analyzePrices" class="btn" type="button">Analyze & Increase</button>
+        <div id="priceResults" class="price-results" aria-live="polite"></div>
+      </div>
+    </section>
+
     <section id="services" class="section container">
       <h2>What We Organize</h2>
       <p class="section-lead">Tailored planning, design, and coordination for events of every size.</p>
