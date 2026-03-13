@@ -39,3 +39,18 @@ I saw that project with the Clubhouse API reverse engineersed and thought to mys
 
 ### How do I build this?
 Import into Android Studio and click "run". Or, there's an apk you can install in the releases section.
+
+### How do I run the app locally?
+1. Clone this repository.
+2. Open it in Android Studio.
+3. Let Gradle sync finish.
+4. Select an emulator or connected Android device.
+5. Click **Run**.
+
+If you prefer the command line, you can also run:
+
+```bash
+./gradlew :Houseclub:installDebug
+```
+
+Then launch the installed app on your device/emulator.
