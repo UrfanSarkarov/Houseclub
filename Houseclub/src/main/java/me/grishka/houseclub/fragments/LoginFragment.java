@@ -94,7 +94,21 @@ public class LoginFragment extends BaseToolbarFragment{
 		return countryCodePicker.getNumber();
 	}
 
+	private boolean isPhoneNumberValid(){
+		try{
+			Phonenumber.PhoneNumber number=phoneNumberUtil.parse(getCleanPhoneNumber(), null);
+			return phoneNumberUtil.isValidNumber(number);
+		}catch(NumberParseException ignore){
+			return false;
+		}
+	}
+
 	private void onNextClick(View v){
+		if(!sentCode && !isPhoneNumberValid()){
+			Toast.makeText(getActivity(), R.string.invalid_phone_number, Toast.LENGTH_SHORT).show();
+			return;
+		}
+
 		if(sentCode){
 			new CompletePhoneNumberAuth(getCleanPhoneNumber(), codeInput.getText().toString())
 					.wrapProgress(getActivity())
